@@ -37,7 +37,6 @@ if(isset($_POST['OriginalUrl'])){
         $insertSql = "INSERT INTO UrlInfo(originalURL) VALUES ('$url')";
         $result =$conn->query($insertSql);
         
-        echo $url;
         // 데이터 삽입 진행 후 그에 대한 num값 반환!
         $selectSql = "SELECT id FROM UrlInfo where originalURL ='$url'";
         $result1 =$conn->query($selectSql);
