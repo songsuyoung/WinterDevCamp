@@ -38,7 +38,7 @@ public class TransformerController : MonoBehaviour
         newURL=reserve(newURL);
 
         hashURL+=newURL;
-        StartCoroutine(db.SetHashUrls(hashURL,originalId));
+        StartCoroutine(db.SetHashUrls(hashURL,originalId,PlayerPrefs.GetInt("id")));
         ShowShortenUrls(hashURL);
         return newURL;
     }

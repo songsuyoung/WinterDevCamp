@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 using TMPro;
 
@@ -20,5 +21,9 @@ public class InputURLController : MonoBehaviour
         originURL=input.text;
         StartCoroutine(db.GetURLs(originURL));
         
+    }
+
+    public void OnMypageButClick(){
+        SceneManager.LoadScene("MypageHome");
     }
 }
