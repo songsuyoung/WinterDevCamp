@@ -45,7 +45,7 @@ Apache - Php </br>
 Mysql 
 
 ## 코드 중 확인받고 싶은 부분
-0. URL Shortener 을 구현하기 위해서 Base62 알고리즘을 사용했는데, 이 알고리즘 사용하는 것이 맞는지
+0. URL Shortener 을 구현하기 위해서 Base62 알고리즘을 사용했는데, 이 알고리즘 사용하는 것이 맞는지 (TransformerController.cs 파일)
 1. 
 
 ## 개발관련 과정에서 궁금했던 부분
