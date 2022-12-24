@@ -52,8 +52,17 @@ public class DBLoader : MonoBehaviour
                 Debug.Log(www.error+" : 서버 에러입니다.");
             }else{
                 try{
-                    var input=long.Parse(Regex.Replace(www.downloadHandler.text, @"\D", ""));
-                    TransContrl.encodeBase62(input);
+
+                    string text = www.downloadHandler.text;
+
+                    if(text.Contains("https")){
+                        TransContrl.ShowShortenUrls(www.downloadHandler.text);
+                    }else{
+                        var input=long.Parse(Regex.Replace(www.downloadHandler.text, @"\D", ""));
+                        TransContrl.encodeBase62(input);
+
+                    }
+                    
                 }catch(FormatException e){
                     TransContrl.ShowShortenUrls(www.downloadHandler.text);
                 }
