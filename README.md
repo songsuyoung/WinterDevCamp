@@ -38,16 +38,21 @@ URL 문자는
 <img width="500" alt="스크린샷 2022-12-20 오후 2 42 26" src="https://user-images.githubusercontent.com/81684148/208592692-46ecaa95-6424-437d-9fbd-d49a1b6aa84b.png">
 <img width="500" alt="스크린샷 2022-12-20 오후 2 42 36" src="https://user-images.githubusercontent.com/81684148/208592697-7d9a9d1f-c399-4453-bf43-7809e86f8df4.png">
 
+4. Mypage
+<img width="500" alt="스크린샷 2022-12-24 오전 10 06 50" src="https://user-images.githubusercontent.com/81684148/209416439-e013f4ea-2f05-445a-9f51-2334eff88e97.png">
+
+5. 검색 후 마이페이지 상황 변화
+<img width="500" alt="스크린샷 2022-12-24 오전 10 07 30" src="https://user-images.githubusercontent.com/81684148/209416441-7306c3a0-3c33-48ff-9407-a009124cd509.png">
+<img width="500" alt="스크린샷 2022-12-24 오전 10 07 36" src="https://user-images.githubusercontent.com/81684148/209416443-8a5893da-fff5-4b1c-80b6-13bfe46c8139.png">
+
 
 ## 기술 스택
 Unity - c# </br>
 Apache - Php </br>
-Mysql 
+Mysql </br>
 
 ## 코드 중 확인받고 싶은 부분
 0. URL Shortener 을 구현하기 위해서 Base62 알고리즘을 사용했는데, 이 알고리즘 사용하는 것이 맞는지 (TransformerController.cs 파일)
-1. 
 
 ## 개발관련 과정에서 궁금했던 부분
 0. 실제 게임회사에서 데이터 보관 방법, php파일을 이용해 mysql로 데이터를 이동시키면 해킹 당할 확률이 높지 않나요?
-1. 
