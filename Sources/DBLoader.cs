@@ -8,9 +8,10 @@ public class DBLoader : MonoBehaviour
 {
 
     TransformerController TransContrl;
-
+    GetAllUrlController Gurl;
     void Start(){
         TransContrl=GameObject.FindObjectOfType<TransformerController>();
+        Gurl=GameObject.FindObjectOfType<GetAllUrlController>();
     }
 
     //shortener url 넘기기
@@ -138,12 +139,11 @@ public class DBLoader : MonoBehaviour
 
     //Get URL
 
-    public IEnumerator GetAllUrls(string urlid,string userid)
+    public IEnumerator GetAllUrls(string userid)
     {
         string serverPath = "http://127.0.0.1/PhpFile/GetAllUrls.php"; //PHP 파일의 위치를 저장
         WWWForm form = new WWWForm(); //웹에 입력을 위함.
         
-        form.AddField("urlid",urlid);
         form.AddField("userid",userid);
 
         using (UnityWebRequest www = UnityWebRequest.Post(serverPath,form)) //웹 서버에 요청
@@ -154,6 +154,8 @@ public class DBLoader : MonoBehaviour
                 Debug.Log(www.error+" : 서버 에러입니다.");
             }else{
                 Debug.Log(www.downloadHandler.text);
+                if(Gurl!=null)
+                    Gurl.Settings(www.downloadHandler.text);
             }
         }
     }
